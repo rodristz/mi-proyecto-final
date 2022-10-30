@@ -6,6 +6,9 @@ from PF_44065.AppCoder.forms import CursoFormulario, ProfesorFormulario
 
 # Create your views here.
 
+def cursoFormulario(request):
+      return render(request, "AppCoder/cursoFormilario.html")
+
 def curso(request):
       curso =  Curso(nombre="Desarrollo web", camada="19881")
       curso.save()
