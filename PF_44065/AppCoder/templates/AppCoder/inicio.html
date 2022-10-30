@@ -1,4 +1,4 @@
-{% extends "AppCoder/padre.html" %}
+{% extends "PF_44065/AppCoder/padre.html" %}
 
 {% load static %}
 
@@ -10,16 +10,9 @@
   
 
     <h3>Podes buscar una camada:</h3>
-
     <form action="/AppCoder/buscar/" method="GET">
-
         <input type="number" name="camada" id="camada">
-
         <input type="submit" value="Buscar">
-
-
-
-
     </form>
 
     
@@ -27,15 +20,11 @@
     {% if cursos %}
 
     <p>Estamos buscando el: {{camada}}</p>
-
     <ul>
 	{% for curso in cursos %}
 		<li> {{curso.nombre}} </li>
 		<li> {{curso.camada}} </li>
 	{% endfor %}
-
     </ul>
-
     {% endif %}
-
 {% endblock %}
